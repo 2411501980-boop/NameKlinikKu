@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Name KlinikKu</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="judul_user">Manajemen Data User</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="btn_simpan">SIMPAN</string>
+    <string name="btn_tampil">TAMPIL</string>
+    <string name="btn_hapus">HAPUS</string>
+    <string name="btn_ubah">UBAH</string>
+
+    <string name="status_label">Status:</string>
+    <string name="hasil_label">Hasil Data:</string>
+    <string name="status_default">Menunggu...</string>
+    <string name="hasil_default">-</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtJudulTambahObat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Obat Baru"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/edtNamaObat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Obat"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edtJenisObat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis/Kategori Obat"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edtHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga (Rp)"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edtStok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stok"
+            android:inputType="number"
+            android:layout_marginBottom="30dp"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnSimpanObat"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Simpan Data Obat"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>

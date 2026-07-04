@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,50m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0" />
+
+    <!-- Blue Shield/Building Shape -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M25,35 L75,35 L75,75 Q75,85 50,85 Q25,85 25,75 Z" />
+
+    <!-- Roof -->
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M20,35 L50,15 L80,35 Z" />
+
+    <!-- Medical Cross -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,45 L56,45 L56,57 L68,57 L68,69 L56,69 L56,81 L44,81 L44,69 L32,69 L32,57 L44,57 Z" />
+
+    <!-- Reflection/Detail -->
+    <path
+        android:fillColor="#33FFFFFF"
+        android:pathData="M50,15 L80,35 L75,35 L50,18 Z" />
+</vector>

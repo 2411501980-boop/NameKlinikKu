@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtJudulTambahDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Dokter Baru"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/edtNamaDokter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Dokter"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="15dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edtSpesialis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Spesialis"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edtHari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hari Praktik (Contoh: Senin - Jumat)"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edtJam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jam Praktik (Contoh: 08:00 - 16:00)"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edtTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor Telepon"
+            android:inputType="phone"
+            android:layout_marginBottom="30dp"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnSimpanDokter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Simpan Data Dokter"
+            android:backgroundTint="#1565C0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>

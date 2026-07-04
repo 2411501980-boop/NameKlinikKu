@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtNamaDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Dokter"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"/>
+
+        <TextView
+            android:id="@+id/txtSpesialis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spesialis: -"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/txtJadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal: -"
+            android:textStyle="italic"
+            android:textColor="#388E3C"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/txtTeleponDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telepon: -"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/btnEditDokter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="#1565C0"
+                android:contentDescription="Edit"/>
+
+            <ImageButton
+                android:id="@+id/btnHapusDokter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="#F44336"
+                android:contentDescription="Hapus"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

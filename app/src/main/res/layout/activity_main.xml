@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manajemen Data User"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        android:paddingBottom="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView android:layout_width="100dp" android:text="Username" android:textSize="16sp" />
+            <EditText android:id="@+id/txtUsername" android:layout_width="match_parent" android:inputType="text" android:hint="Masukkan username" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView android:layout_width="100dp" android:text="Password" android:textSize="16sp" />
+            <EditText android:id="@+id/txtPassword" android:layout_width="match_parent" android:inputType="textPassword" android:hint="Masukkan password" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="10dp">
+            <TextView android:layout_width="100dp" android:text="Role" android:textSize="16sp" />
+            <RadioGroup android:id="@+id/rgRole" android:orientation="horizontal">
+                <RadioButton android:id="@+id/rbAdmin" android:text="Admin" android:layout_marginRight="10dp" />
+                <RadioButton android:id="@+id/rbPasien" android:text="Pasien" android:checked="true" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow android:paddingTop="15dp">
+            <Button android:id="@+id/btnSimpan" android:layout_width="0dp" android:layout_weight="1" android:text="SIMPAN" android:onClick="Simpan" android:backgroundTint="#4CAF50" android:textColor="@android:color/white" />
+            <Button android:id="@+id/btnTampil" android:layout_width="0dp" android:layout_weight="1" android:text="TAMPIL" android:onClick="Tampil" android:backgroundTint="#2196F3" android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow android:paddingTop="5dp">
+            <Button android:id="@+id/btnHapus" android:layout_width="0dp" android:layout_weight="1" android:text="HAPUS" android:onClick="Hapus" android:backgroundTint="#F44336" android:textColor="@android:color/white" />
+            <Button android:id="@+id/btnUbah" android:layout_width="0dp" android:layout_weight="1" android:text="UBAH" android:onClick="Ubah" android:backgroundTint="#FF9800" android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow android:paddingTop="30dp">
+            <TextView android:text="Status:" android:textStyle="bold" />
+            <TextView android:id="@+id/status" android:text="Menunggu..." android:paddingLeft="10dp" />
+        </TableRow>
+
+        <TableRow android:paddingTop="5dp">
+            <TextView android:text="Hasil Data:" android:textStyle="bold" />
+            <TextView android:id="@+id/role" android:text="-" android:paddingLeft="10dp" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
